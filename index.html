@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Videos Content Content-Creator Search">
+    <title>YouTube</title>
+
+    <link rel="shortcut icon" href="/imgs/youtube-logo.png" type="image/x-icon">
+
+    <!-- Css Index File -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- Css Font AWesome File -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+</head>
+
+<body>
+    <!-- Start App -->
+    <div class="app">
+        <!-- Header -->
+        <header>
+            <div class="container-fluid align-flex">
+                <!-- Start Box -->
+                <div class="start-box align-flex">
+                    <button onclick="toggleFloatingSidebar()" aria-label="open-sidebar" type="button"
+                        class="btn-open-sidebar transition rounded-circle">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <a href="index.html" class="youtube-logo align-flex">
+                        <img src="imgs/youtube-logo.png" alt="Youtube Logo" width="35">
+                        <span>YouTube</span>
+                    </a>
+                </div>
+                <!-- Search Form -->
+                <div class="search-form align-flex">
+                    <button onclick="toggleSearchForm()" aria-label="close" type="button" class="btn-close-search-form rounded-circle">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <form method="get">
+                        <input type="search" name="search" placeholder="Search">
+                        <button type="submit" class="btn-submit-search" aria-label="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                    <button type="button" class="btn-recorder-search" aria-label="record">
+                        <i class="fa-solid fa-microphone"></i>
+                    </button>
+                </div>
+                <!-- End Box -->
+                <div class="end-box align-flex">
+                    <button onclick="toggleSearchForm()" aria-label="open-search-form" type="button"
+                        class="btn-open-search-form transition rounded-circle">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <button type="button" aria-label="create" class="btn-create transition rounded-circle">
+                        <i class="fa-solid fa-video fa-fw"></i>
+                    </button>
+                    <button type="button" aria-label="notifications"
+                        class="btn-notifications transition rounded-circle">
+                        <i class="fa-solid fa-bell fa-fw"></i>
+                    </button>
+                    <button type="button" aria-label="profile-user" class="btn-profile transition rounded-circle">
+                        <i class="fa-solid fa-user fa-fw"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!-- Clear Box Header -->
+        <div class="clear-box-header"></div>
+        <!-- Page -->
+        <div class="page">
+            <!-- Sidebar -->
+            <aside>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <i class="fa-solid fa-house fa-fw"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <i class="fa-solid fa-clapperboard fa-fw"></i>
+                            <span>Shorts</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <i class="fa-solid fa-photo-film fa-fw"></i>
+                            <span>Subscriptions</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <i class="fa-solid fa-film fa-fw"></i>
+                            <span>You</span>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <!-- Clear Box Sidebar -->
+            <div class="clear-box-sidebar"></div>
+            <!-- Floating Sidebar -->
+            <div class="floating-aside">
+                <div class="aside">
+                    <div class="header align-flex">
+                        <button onclick="toggleFloatingSidebar()" aria-label="close-sidebar" type="button"
+                            class="btn-close-sidebar transition rounded-circle">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <a href="index.html" class="youtube-logo align-flex">
+                            <img src="imgs/youtube-logo.png" alt="Youtube Logo" width="35">
+                            <span>YouTube</span>
+                        </a>
+                    </div>
+                    <ul class="links">
+                        <li>
+                            <a href="index.html">
+                                <i class="fa-solid fa-house fa-fw"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="fa-solid fa-clapperboard fa-fw"></i>
+                                <span>Shorts</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="fa-solid fa-photo-film fa-fw"></i>
+                                <span>Subscriptions</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <ul class="you">
+                        <li>
+                            <a href="index.html">
+                                <i class="fa-solid fa-user fa-fw"></i>
+                                <span>Your Chanel</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="fa-solid fa-clock-rotate-left fa-fw"></i>
+                                <span>History</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="fa-solid fa-camera fa-fw"></i>
+                                <span>Your Videos</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="fa-regular fa-clock fa-fw"></i>
+                                <span>Watch Later</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="fa-solid fa-thumbs-up fa-fw"></i>
+                                <span>Liked Videos</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <ul class="subscriptions">
+                        <li>
+                            <a href="index.html">
+                                <i class="fa-solid fa-user fa-fw"></i>
+                                <span>Name Chanel</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="fa-solid fa-user fa-fw"></i>
+                                <span>Name Chanel</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="fa-solid fa-user fa-fw"></i>
+                                <span>Name Chanel</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="fa-solid fa-user fa-fw"></i>
+                                <span>Name Chanel</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="fa-solid fa-user fa-fw"></i>
+                                <span>Name Chanel</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <ul class="explore">
+                        <li>
+                            <a href="index.html">
+                                <i class="fa-solid fa-arrow-trend-up fa-fw"></i>
+                                <span>Trending</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="fa-solid fa-music fa-fw"></i>
+                                <span>Music</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="fa-solid fa-headset fa-fw"></i>
+                                <span>Live</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="fa-solid fa-gamepad fa-fw"></i>
+                                <span>Gaming</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="fa-solid fa-trophy fa-fw"></i>
+                                <span>Sport</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <ul class="other">
+                        <li>
+                            <a href="index.html">
+                                <i class="fa-solid fa-gear fa-fw"></i>
+                                <span>Settings</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="fa-solid fa-flag fa-fw"></i>
+                                <span>Report history</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="fa-solid fa-question fa-fw"></i>
+                                <span>Help</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="fa-regular fa-message fa-fw"></i>
+                                <span>Send feedback</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Content -->
+            <div class="content">
+                <!-- Slider Filter -->
+                <div class="slider-filter">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper slider-wrapper">
+                            <div class="swiper-slide slide-filter active">All</div>
+                            <div class="swiper-slide slide-filter">Gaming</div>
+                            <div class="swiper-slide slide-filter">Music</div>
+                            <div class="swiper-slide slide-filter">JavaScript</div>
+                            <div class="swiper-slide slide-filter">Adobe PhotoShop</div>
+                            <div class="swiper-slide slide-filter">Skills</div>
+                            <div class="swiper-slide slide-filter">Adobe Premier Pro</div>
+                            <div class="swiper-slide slide-filter">Games for Peace</div>
+                            <div class="swiper-slide slide-filter">Pubg</div>
+                            <div class="swiper-slide slide-filter">Presentation</div>
+                            <div class="swiper-slide slide-filter">Live</div>
+                            <div class="swiper-slide slide-filter">eFootball</div>
+                            <div class="swiper-slide slide-filter">New to you</div>
+                            <div class="swiper-slide slide-filter">FIFA 20</div>
+                            <div class="swiper-slide slide-filter">Cristiaon Ronaldo</div>
+                            <div class="swiper-slide slide-filter">Ai</div>
+                        </div>
+                        <div class="swiper-button-next slide-filter-control-next"></div>
+                        <div class="swiper-button-prev slide-filter-control-prev"></div>
+                    </div>
+                </div>
+                <!-- Videos -->
+                <div class="content-videos">
+                    <div class="box-video">
+                        <div class="poster-video">
+                            <img src="imgs/videos/1.jpg" alt="Photo">
+                        </div>
+                        <div class="info-video">
+                            <a href="index.html" class="chanel-link">
+                                <img src="imgs/profile-chanel/1.png" alt="Photo" width="40" height="40" class="rounded-circle">
+                            </a>
+                            <div class="text-video">
+                                <p class="description-video">Lorem ipsum dolor sit amet.</p>
+                                <a href="index.html" class="chanel-link">Name Chanel</a>
+                                <div class="statices-video align-flex">
+                                    <div class="views">
+                                        <span class="num-views">10,000</span>
+                                        <span>Views</span>
+                                    </div>
+                                    .
+                                    <div class="date-publish">
+                                        38 minutes ago
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-video">
+                        <div class="poster-video">
+                            <img src="imgs/videos/2.jpg" alt="Photo">
+                        </div>
+                        <div class="info-video">
+                            <a href="index.html" class="chanel-link">
+                                <img src="imgs/profile-chanel/2.png" alt="Photo" width="40" height="40" class="rounded-circle">
+                            </a>
+                            <div class="text-video">
+                                <p class="description-video">Lorem ipsum dolor sit amet.</p>
+                                <a href="index.html" class="chanel-link">Name Chanel</a>
+                                <div class="statices-video align-flex">
+                                    <div class="views">
+                                        <span class="num-views">10,000</span>
+                                        <span>Views</span>
+                                    </div>
+                                    .
+                                    <div class="date-publish">
+                                        38 minutes ago
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-video">
+                        <div class="poster-video">
+                            <img src="imgs/videos/3.jpg" alt="Photo">
+                        </div>
+                        <div class="info-video">
+                            <a href="index.html" class="chanel-link">
+                                <img src="imgs/profile-chanel/3.png" alt="Photo" width="40" height="40" class="rounded-circle">
+                            </a>
+                            <div class="text-video">
+                                <p class="description-video">Lorem ipsum dolor sit amet.</p>
+                                <a href="index.html" class="chanel-link">Name Chanel</a>
+                                <div class="statices-video align-flex">
+                                    <div class="views">
+                                        <span class="num-views">10,000</span>
+                                        <span>Views</span>
+                                    </div>
+                                    .
+                                    <div class="date-publish">
+                                        38 minutes ago
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-video">
+                        <div class="poster-video">
+                            <img src="imgs/videos/4.jpg" alt="Photo">
+                        </div>
+                        <div class="info-video">
+                            <a href="index.html" class="chanel-link">
+                                <img src="imgs/profile-chanel/4.png" alt="Photo" width="40" height="40" class="rounded-circle">
+                            </a>
+                            <div class="text-video">
+                                <p class="description-video">Lorem ipsum dolor sit amet.</p>
+                                <a href="index.html" class="chanel-link">Name Chanel</a>
+                                <div class="statices-video align-flex">
+                                    <div class="views">
+                                        <span class="num-views">10,000</span>
+                                        <span>Views</span>
+                                    </div>
+                                    .
+                                    <div class="date-publish">
+                                        38 minutes ago
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-video">
+                        <div class="poster-video">
+                            <img src="imgs/videos/5.jpg" alt="Photo">
+                        </div>
+                        <div class="info-video">
+                            <a href="index.html" class="chanel-link">
+                                <img src="imgs/profile-chanel/5.png" alt="Photo" width="40" height="40" class="rounded-circle">
+                            </a>
+                            <div class="text-video">
+                                <p class="description-video">Lorem ipsum dolor sit amet.</p>
+                                <a href="index.html" class="chanel-link">Name Chanel</a>
+                                <div class="statices-video align-flex">
+                                    <div class="views">
+                                        <span class="num-views">10,000</span>
+                                        <span>Views</span>
+                                    </div>
+                                    .
+                                    <div class="date-publish">
+                                        38 minutes ago
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-video">
+                        <div class="poster-video">
+                            <img src="imgs/videos/6.jpg" alt="Photo">
+                        </div>
+                        <div class="info-video">
+                            <a href="index.html" class="chanel-link">
+                                <img src="imgs/profile-chanel/6.png" alt="Photo" width="40" height="40" class="rounded-circle">
+                            </a>
+                            <div class="text-video">
+                                <p class="description-video">Lorem ipsum dolor sit amet.</p>
+                                <a href="index.html" class="chanel-link">Name Chanel</a>
+                                <div class="statices-video align-flex">
+                                    <div class="views">
+                                        <span class="num-views">10,000</span>
+                                        <span>Views</span>
+                                    </div>
+                                    .
+                                    <div class="date-publish">
+                                        38 minutes ago
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-video">
+                        <div class="poster-video">
+                            <img src="imgs/videos/7.jpg" alt="Photo">
+                        </div>
+                        <div class="info-video">
+                            <a href="index.html" class="chanel-link">
+                                <img src="imgs/profile-chanel/7.png" alt="Photo" width="40" height="40" class="rounded-circle">
+                            </a>
+                            <div class="text-video">
+                                <p class="description-video">Lorem ipsum dolor sit amet.</p>
+                                <a href="index.html" class="chanel-link">Name Chanel</a>
+                                <div class="statices-video align-flex">
+                                    <div class="views">
+                                        <span class="num-views">10,000</span>
+                                        <span>Views</span>
+                                    </div>
+                                    .
+                                    <div class="date-publish">
+                                        38 minutes ago
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-video">
+                        <div class="poster-video">
+                            <img src="imgs/videos/8.jpg" alt="Photo">
+                        </div>
+                        <div class="info-video">
+                            <a href="index.html" class="chanel-link">
+                                <img src="imgs/profile-chanel/8.png" alt="Photo" width="40" height="40" class="rounded-circle">
+                            </a>
+                            <div class="text-video">
+                                <p class="description-video">Lorem ipsum dolor sit amet.</p>
+                                <a href="index.html" class="chanel-link">Name Chanel</a>
+                                <div class="statices-video align-flex">
+                                    <div class="views">
+                                        <span class="num-views">10,000</span>
+                                        <span>Views</span>
+                                    </div>
+                                    .
+                                    <div class="date-publish">
+                                        38 minutes ago
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-video">
+                        <div class="poster-video">
+                            <img src="imgs/videos/9.jpg" alt="Photo">
+                        </div>
+                        <div class="info-video">
+                            <a href="index.html" class="chanel-link">
+                                <img src="imgs/profile-chanel/9.png" alt="Photo" width="40" height="40" class="rounded-circle">
+                            </a>
+                            <div class="text-video">
+                                <p class="description-video">Lorem ipsum dolor sit amet.</p>
+                                <a href="index.html" class="chanel-link">Name Chanel</a>
+                                <div class="statices-video align-flex">
+                                    <div class="views">
+                                        <span class="num-views">10,000</span>
+                                        <span>Views</span>
+                                    </div>
+                                    .
+                                    <div class="date-publish">
+                                        38 minutes ago
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-video">
+                        <div class="poster-video">
+                            <img src="imgs/videos/10.jpg" alt="Photo">
+                        </div>
+                        <div class="info-video">
+                            <a href="index.html" class="chanel-link">
+                                <img src="imgs/profile-chanel/10.png" alt="Photo" width="40" height="40" class="rounded-circle">
+                            </a>
+                            <div class="text-video">
+                                <p class="description-video">Lorem ipsum dolor sit amet.</p>
+                                <a href="index.html" class="chanel-link">Name Chanel</a>
+                                <div class="statices-video align-flex">
+                                    <div class="views">
+                                        <span class="num-views">10,000</span>
+                                        <span>Views</span>
+                                    </div>
+                                    .
+                                    <div class="date-publish">
+                                        38 minutes ago
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-video">
+                        <div class="poster-video">
+                            <img src="imgs/videos/11.jpg" alt="Photo">
+                        </div>
+                        <div class="info-video">
+                            <a href="index.html" class="chanel-link">
+                                <img src="imgs/profile-chanel/11.png" alt="Photo" width="40" height="40" class="rounded-circle">
+                            </a>
+                            <div class="text-video">
+                                <p class="description-video">Lorem ipsum dolor sit amet.</p>
+                                <a href="index.html" class="chanel-link">Name Chanel</a>
+                                <div class="statices-video align-flex">
+                                    <div class="views">
+                                        <span class="num-views">10,000</span>
+                                        <span>Views</span>
+                                    </div>
+                                    .
+                                    <div class="date-publish">
+                                        38 minutes ago
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-video">
+                        <div class="poster-video">
+                            <img src="imgs/videos/12.jpg" alt="Photo">
+                        </div>
+                        <div class="info-video">
+                            <a href="index.html" class="chanel-link">
+                                <img src="imgs/profile-chanel/12.png" alt="Photo" width="40" height="40" class="rounded-circle">
+                            </a>
+                            <div class="text-video">
+                                <p class="description-video">Lorem ipsum dolor sit amet.</p>
+                                <a href="index.html" class="chanel-link">Name Chanel</a>
+                                <div class="statices-video align-flex">
+                                    <div class="views">
+                                        <span class="num-views">10,000</span>
+                                        <span>Views</span>
+                                    </div>
+                                    .
+                                    <div class="date-publish">
+                                        38 minutes ago
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End App -->
+    <!-- Js Index File -->
+    <script src="js/index.js"></script>
+    <!-- Swiper Js -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 5,
+            slidesPerView: 2,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                575: {
+                    slidesPerView: 3,
+                },
+                768: {
+                    slidesPerView: 4,
+                },
+                1024: {
+                    slidesPerView: 6,
+                },
+                1440: {
+                    slidesPerView: 12,
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>
